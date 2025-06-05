@@ -9,12 +9,128 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
+            *{
+            margin: 0;
+            padding: 0;
+            } 
+            .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+            @media screen and (max-width: 767px) {
+            .heading1{
+                font-size: 18px !important;
+                padding: 16px 28px 16px 16px  !important;
+            }
+            .second{
+                border-radius: 20px !important;
+                width: 89% !important;
+                margin: 10px 0 !important;
+            }
+            .heading2{
+                font-size: 16px !important;
+            }
+            .img1{
+                height: 70px !important;
+                width: 70px !important;
+            }
+            .profile-content{
+                margin-top: 12px !important;
+            }
+            .first .profile-img1 .profile-subtitle1{
+                font-size: 13px !important;
+                font-weight: 600 !important;
+                display: block !important;
+            }
+            .img2{
+                height: 70px !important;
+                width: 70px !important;
+            }
+            .container{
+                width: 95% !important;
+                margin: 0 !important;
+                padding: 14px !important;
+            }
+            .testimonial_with_rating{
+                display: block !important;
+            }
+            .review{
+                width: 89% !important;
+                margin: 10px 0 !important;
+                padding: 5% !important;
+                height: 12.5em !important;
+            }
+            .checked{
+                color: rgba(241,193,2,255) !important;
+            }
+            .heading3{
+                color: white !important;
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+            .container2{
+                display: block !important;
+            }
+            .triangle-down {
+                margin-left: 32px !important;
+            }
+            .sliderSection{
+                width: 99% !important;
+                height: 15.5em !important;
+                padding: 0 !important;
+                }
+            .sliderContent{
+                font-weight: 500 !important;
+                font-size: 15px !important;
+                padding: 20px !important;
+            }
+        .img3{
+                height: 40px !important;
+                width: 40px !important;
+            }
+            .img4{
+                height: 35px !important;
+                width: 35px !important;
+                padding: 0 9px !important;
+            }
+            .angle{
+                text-align: center !important;
+                position: relative !important;
+                margin-top: 13px !important;
+            }  
+            .fa-angle-right{
+                top: 16px !important;
+                right: 5em !important;
+            }
+            .fa-angle-left{
+                top: 16px !important;
+                left: 5em !important;
+            }
+            .sliderName{
+                margin-top: 6px !important; 
+                font-size: 13px !important;
+            }
+        }    
          @media (min-width: 768px) and (max-width:1023px) {
             .container{
-                width: 97%;
-                padding: 12px;
-                border-radius: 12px;
-                margin: 0px;
+                width: 97% !important;
+                padding: 12px !important;
+                border-radius: 12px !important;
+                margin: 0px !important;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .container{
+                border-radius: 12px !important;
+                padding: 26px 40px 40px 40px !important;
+                width: 100% !important;
+                max-width: 820px !important;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+                margin: 80px auto !important;
+            }
+            .sliderSection{
+                width: 80% !important;
             }
         }
     </style>
@@ -48,37 +164,37 @@
                 </div>    
             </div>
         </div>      
-        <div class=testimonial_with_rating>
-            <div class="Testimonial-img">
-                <img class="anmol" src="lixard.JPG" alt="">
+        <div class="testimonial_with_rating" style=" width: 100%; display: flex; flex-direction: row; margin-top: 20px; gap: 20px;">
+            <div class="Testimonial-img" style="width: 100%;">
+                <img class="anmol" style="width: 100%; border-radius: 20px; height: 19em; object-fit: cover;" src="lixard.JPG" alt="">
             </div>
-            <div class="review">
+            <div class="review" style="width: 100%; border: 2px solid black; border-radius: 18px; background-color: rgb(0, 0, 0); margin-left: 0; padding: 18px; height: 16.5em">
                 <div style="margin: 4px 0 0 9px; display: flex;">  
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked" style=" color: rgba(241, 193, 2, 255);"></span>
+                    <span class="fa fa-star checked" style=" color: rgba(241, 193, 2, 255);"></span>
+                    <span class="fa fa-star checked" style=" color: rgba(241, 193, 2, 255);"></span>
+                    <span class="fa fa-star checked" style=" color: rgba(241, 193, 2, 255);"></span>
+                    <span class="fa fa-star checked" style=" color: rgba(241, 193, 2, 255);"></span>
                 </div>        
-                <div class="profile-img2">
-                    <div class="profile-content3">
-                        <span class="profile-title2">Jackie Mackle </span>
-                        <p class="profile-subtitle2">Engineering Manager </p> 
+                <div class="profile-img2" style="margin-top: 16px; display: flex;">
+                    <div class="profile-content3" style="padding-left: 10px;">
+                        <span class="profile-title2" style="color: white; font-size: 24px; font-weight: 600;">Jackie Mackle </span>
+                      <p class="profile-subtitle2" style="color: #585858; font-size: 16px; margin-top: 10px; font-weight: 600;">Engineering Manager </p> 
                         <p style="text-align: justify;">&nbsp;</p>
-                        <span class="heading3">I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill up and grow in your career. </span>
+                        <span class="heading3" style="color: white; font-size: 18px; line-height: 30px;">I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill up and grow in your career. </span>
                     </div>
                 </div>    
             </div>
         </div>   
-        <div class=sliderSection>
-            <p class="sliderContent">roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</p>
-            <div class="angle">
-                <i class="fa-solid fa-angle-left "></i>
+        <div class="sliderSection" style=" border: 2px solid black; width: 78.2%; height: 18em; border-radius: 22px; padding: 3em 5em; margin-top: 20px;" >
+            <p class="sliderContent" style=" font-weight: 400; font-size: 20px; text-align: center;">roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</p>
+            <div class="angle" style="text-align: center; margin-top: 38px; position: relative;">
+                <i class="fa-solid fa-angle-left " style="position: absolute; top: 40px; left: 8em;"></i>
                     <img class="img4" style=" border: 1px solid white; border-radius: 50%; object-fit: cover; height: 80px; width: 80px;" src="1738927073131.jpg" alt="">
                     <img class="img3" style=" border: 1px solid white; border-radius: 50%; object-fit: cover; height: 68px; width: 68px; opacity: 0.6; padding: 0 19px;" src="1726821197618.jpg" alt="">
                     <img class="img4" style=" border: 1px solid white; border-radius: 50%; object-fit: cover; height: 80px; width: 80px;" src="1738927073131.jpg" alt="">
-                <i class="fa-solid fa-angle-right"></i>
-                <p class="sliderName">Artem Jones</p>
+                <i class="fa-solid fa-angle-right" style="position: absolute; top: 40px; right: 8em;"></i>
+                <p class="sliderName" style="margin-top: 6px; font-size: 20px;">Artem Jones</p>
             </div>
         </div>
     </div>      
